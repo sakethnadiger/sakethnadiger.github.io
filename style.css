@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+
+}
+
+
+
+.footer a:visited {
+    text-decoration: none;
+    color: #8800ff;
+    font-style: italic;
+}
+
+.footer a:link {
+    color: #8800ff;
+    text-decoration:none;
+    font-style: italic;
+}
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    background:  black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10
+}
+
+.logo {
+    font-size: 40px;
+    text-decoration: overline;
+    color:  #8800ff;
+    font-weight: 700;
+}
+
+.navbar a {
+    position:relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8800ff;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.navbar a::before {
+    content: '';
+    position:absolute;
+    top: 30px;
+    left:0;
+    width:0;
+    height:2px;
+    background: #8800ff;
+
+
+}
+
+.navbar a:hover::before {
+    width:100%;
+}
+
+h1 {
+    font-style: italic;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main{
+    position: relative;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: "FreeMono", monospace;
+    padding-bottom: 2.5rem;
+    margin: 0;
+    background-color: black;
+}
+
+.footer {
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "FreeMono", monospace;
+    color: #8800ff;
+    font-size: medium;
+    padding-bottom: 20px;
+    
+}
+#sunsetimg {
+    margin-top: 50px;
+    transition: 1s;
+    border-radius: 20%;
+}
+
+  
+body {
+    margin: 0;
+    background: black;
+    display: grid;
+    height: 100vh;
+    grid-auto-flow :column;
+    justify-content: center;
+    place-content: center;
+    gap: 40px;
+    color: #8800ff;
+}
+body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content p {
+    overflow-wrap: break-word;
+}
